@@ -39,7 +39,7 @@ const OhmsLawQuiz: React.FC<OhmsLawQuizProps> = ({ voltage, resistance, onSolve 
 
   return (
     <div className="border-2 border-blue-500 p-4 sm:p-6 my-4 rounded-lg shadow-lg text-gray-700">
-      <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-700">Ohm's Law Challenge</h3>
+      <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-700">Ohm&apos;s Law Challenge</h3>
       <p className="mb-2 text-sm sm:text-base">
         Given the following values, calculate the missing one.
       </p>
