@@ -121,7 +121,7 @@ const CircuitDnDQuiz: React.FC<CircuitDnDQuizProps> = ({ onSolve }) => {
                 >
                   <p className="text-[10px] sm:text-xs text-gray-500 capitalize mb-1">{slot.requiredType} Slot</p>
                   {slot.placedComponent ? (
-                    <Draggable draggableId={slot.placedComponent.id} index={index} key={slot.placedComponent.id}>
+                    <Draggable draggableId={slot.placedComponent?.id!} index={index} key={slot.placedComponent?.id!}>
                       {(dragProvided) => (
                         <div
                           ref={dragProvided.innerRef}
@@ -129,7 +129,7 @@ const CircuitDnDQuiz: React.FC<CircuitDnDQuizProps> = ({ onSolve }) => {
                           {...dragProvided.dragHandleProps}
                           className="p-1 sm:p-2 bg-white rounded shadow border border-gray-300 text-xs sm:text-sm"
                         >
-                          {slot.placedComponent.name}
+                          {slot.placedComponent?.name}
                         </div>
                       )}
                     </Draggable>
