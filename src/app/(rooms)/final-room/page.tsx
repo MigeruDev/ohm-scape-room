@@ -36,7 +36,7 @@ const finalQuizQuestions: Question[] = [
 ];
 
 const FinalRoomPage: React.FC = () => {
-  const { isRoomUnlocked, stopAllSounds: stopGameSounds } = useGameContext(); // Assuming stopAllSounds might be added to context
+  const { isRoomUnlocked } = useGameContext(); // Assuming stopAllSounds might be added to context
   const router = useRouter();
   const { playSound, stopSound: stopBackgroundHum } = useSound(); // For specific sounds in this room
   const [isLabEscaped, setIsLabEscaped] = useState(false);

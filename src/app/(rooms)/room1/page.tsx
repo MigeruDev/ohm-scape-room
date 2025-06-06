@@ -8,7 +8,6 @@ import PuzzlePlaceholder from '@/components/PuzzlePlaceholder/PuzzlePlaceholder'
 import Clue from '@/components/Clue/Clue';
 import OhmsLawQuiz from '@/components/OhmsLawQuiz/OhmsLawQuiz';
 import { useGameContext } from '@/context/GameContext';
-import useSound from '@/hooks/useSound'; // Import useSound
 
 const Room1Page: React.FC = () => {
   const { unlockRoom2 } = useGameContext();
