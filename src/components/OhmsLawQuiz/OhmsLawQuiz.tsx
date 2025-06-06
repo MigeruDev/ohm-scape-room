@@ -30,7 +30,7 @@ const OhmsLawQuiz: React.FC<OhmsLawQuizProps> = ({ voltage, resistance, onSolve 
     } else {
       playSound('incorrect.mp3');
       setFeedbackMessage(
-        `Not quite! Remember Ohm's Law: Current (I) = Voltage (V) / Resistance (R).
+        `Not quite! Remember Ohm&apos;s Law: Current (I) = Voltage (V) / Resistance (R).
          With V=${voltage}V and R=${resistance}Ω, the current should be ${expectedCurrent.toFixed(2)}A.
          You entered ${userAnswerNumeric}A. Try calculating again.`
       );

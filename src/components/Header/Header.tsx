@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'; // To highlight active link
 import { useGameContext } from '@/context/GameContext';
 
 const Header: React.FC = () => {
-  const { unlockedRooms, isRoomUnlocked } = useGameContext();
+  const { isRoomUnlocked } = useGameContext();
   const pathname = usePathname();
 
   const navLinkClasses = (path: string, isEnabled: boolean) =>
